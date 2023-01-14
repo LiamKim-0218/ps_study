@@ -1,6 +1,15 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
 
-int main(void){
-  printf("Hello DJC");
-  return 0;
+int solution(int n) {
+    int answer = 0;
+    for(int i = 1; i<n+1; i++)
+    {
+        if(i%2 == 0)
+        {
+            answer += i;       
+        }
+    }
+    return answer;
 }
